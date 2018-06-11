@@ -21,8 +21,8 @@ export function* bigFlow (action) {
     yield call(setLocalBigDb, payload.data);
   }
   } catch (error) {
-    console.dir(error)
-        yield put(bigFailer(error.message))
+    
+      yield put(bigFailer(error.message))
   }
   
 }

@@ -24,7 +24,7 @@ export function* smallFlow (action) {
         
     }
     } catch (error) {
-        console.dir(error)
+        
         yield put(smallFailer(error.message))
     }
         

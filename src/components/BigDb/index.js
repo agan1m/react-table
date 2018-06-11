@@ -58,8 +58,8 @@ class BigDb extends Component {
     if (this.props.isLoading) return <div className='spinner'>
                                   <Spinner size="64px" color="fuchsia" gap={5} />
                                 </div>;
-                                
-    if (this.props.error) return <p>{this.props.error}</p>
+
+    if (this.props.error) return <p className='error'>{this.props.error}</p>
     
     return (
       <div className="wrapper">
